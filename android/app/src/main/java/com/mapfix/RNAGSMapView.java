@@ -20,12 +20,6 @@ public class RNAGSMapView extends LinearLayout implements LifecycleEventListener
 
     View rootView;
     public MapView mapView;
-    String basemapUrl = "";
-    String routeUrl = "";
-    Boolean recenterIfGraphicTapped = false;
-    Double minZoom = 0.0;
-    Double maxZoom = 0.0;
-    Boolean rotationEnabled = true;
 
     public RNAGSMapView(Context context) {
         super(context);
