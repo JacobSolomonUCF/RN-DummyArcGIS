@@ -34,6 +34,9 @@ const App: () => React$Node = () => {
       <ArcGISMapView
         ref={mapView => this.mapView = mapView}
         style={styles.root}
+        onMapDidLoad={e => {
+          console.log('MAP DID LOAD', e.nativeEvent);
+        }}
       />
     </View>
   );

@@ -41,7 +41,7 @@ public class RNAGSMapView extends LinearLayout implements LifecycleEventListener
             WritableMap map = Arguments.createMap();
             map.putBoolean("success",success);
             map.putString("errorMessage",errorMessage);
-
+            emitEvent("onMapDidLoad",map);
         });
     }
 
